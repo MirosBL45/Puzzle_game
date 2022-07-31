@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (max-width: 900px) {
+  html {
+    font-size: 75%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  background: hsl(0deg, 0%, 14%);
+  line-height: 1.4;
+  font-size: 1.2rem;
+  color: blueviolet;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-size: 1.4rem;
+}
+
+header {
+  padding: 1rem 1rem 0;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.87rem;
+}
+header ul {
+  list-style: none;
+}
+header ul li {
+  display: inline-block;
+  margin-right: 0.5rem;
+  border-right: 1px solid blueviolet;
+  line-height: 1;
+  padding-right: 0.62rem;
+  transition: 0.3s;
+}
+header ul li:hover {
+  color: aqua;
+  cursor: pointer;
+}
+
+main {
+  margin: 0 1rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .level_1 {
+  width: 37.5rem;
+  height: 37.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  /* Finta za menjanje redosleda elemenata,
+  jer je parent flex i onda child sa order
+  menjeju mesta
+  .img_holder_1:nth-child(1) {
+      order: 2;
+  }
+  .img_holder_1:nth-child(2) {
+      order: 1;
+  }
+  */
+}
+main .level_1 .img_holder_1 {
+  flex-basis: 50%;
+}
+main .level_2,
+main .level_3 {
+  width: 37.5rem;
+  height: 37.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  display: none;
+}
+main .level_2 {
+  width: 43.75rem !important;
+}
+main .level_3 {
+  height: 51.5rem !important;
+}
+main .img_holder_2 {
+  flex-basis: 33.3333%;
+}
+main .img_holder_3 {
+  flex-basis: 25%;
+}
+main .parce_slike_1,
+main .parce_slike_2,
+main .parce_slike_3 {
+  width: 100%;
+  height: 100%;
+  cursor: grab;
+}
+main .parce_slike_1:hover,
+main .parce_slike_2:hover,
+main .parce_slike_3:hover {
+  border: 1px solid yellow;
+}
+
+.zavrsenoLink {
+  color: gold;
+}
+
+.zavrsenoDiv {
+  border: 5px solid green;
+  box-shadow: 0 0 16px green;
+}
+
+.gotovoBrojanje {
+  color: gold;
+  font-weight: bolder;
+}
+
+.close {
+  color: blueviolet;
+  text-align: center;
+  padding: 0.8rem 0;
+  font-weight: 700;
+}
+.close a {
+  color: beige;
+  text-decoration: none;
+}

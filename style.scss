@@ -1,0 +1,160 @@
+@import 'media';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    @include odaziv(tab-land) {
+        font-size: 75%; //12px=1rem; 12/16px=75%
+    }
+
+    @include odaziv(tab-port) {
+        font-size: 62.5%; //1rem=10px 10px/16px=62.5%
+    }
+
+    @include odaziv(phone) {
+        font-size: 56.25%; //9px=1rem; 9/16px=56.25%
+    }
+}
+
+body,
+html {
+    height: 100%;
+}
+
+body {
+    background: hsl(0, 0%, 14%);
+    line-height: 1.4;
+    font-size: 1.2rem;
+    color: blueviolet;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size: 1.4rem;
+}
+
+header {
+    padding: 1rem 1rem 0;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.87rem;
+
+    ul {
+        list-style: none;
+
+        li {
+            display: inline-block;
+            margin-right: 0.5rem;
+            border-right: 1px solid blueviolet;
+            line-height: 1;
+            padding-right: 0.62rem;
+            transition: 0.3s;
+        }
+
+        li:hover {
+            color: aqua;
+            cursor: pointer;
+        }
+    }
+}
+
+main {
+    margin: 0 1rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .level_1 {
+        width: 37.5rem;
+        height: 37.5rem;
+        display: flex;
+        flex-wrap: wrap;
+
+        .img_holder_1 {
+            flex-basis: 50%;
+        }
+
+        /* Finta za menjanje redosleda elemenata,
+        jer je parent flex i onda child sa order
+        menjeju mesta
+        .img_holder_1:nth-child(1) {
+            order: 2;
+        }
+        .img_holder_1:nth-child(2) {
+            order: 1;
+        }
+        */
+    }
+
+    .level_2,
+    .level_3 {
+        width: 37.5rem;
+        height: 37.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        display: none;
+    }
+
+    .level_2 {
+        width: 43.75rem !important;
+    }
+
+    .level_3 {
+        height: 51.5rem !important;
+    }
+
+    .img_holder_2 {
+        flex-basis: 33.3333%;
+    }
+
+    .img_holder_3 {
+        flex-basis: 25%;
+    }
+
+    .parce_slike_1,
+    .parce_slike_2,
+    .parce_slike_3 {
+        width: 100%;
+        height: 100%;
+        cursor: grab;
+    }
+
+    .parce_slike_1:hover,
+    .parce_slike_2:hover,
+    .parce_slike_3:hover {
+        border: 1px solid yellow;
+    }
+}
+
+.zavrsenoLink {
+    color: gold;
+}
+
+.zavrsenoDiv {
+    border: 5px solid green;
+    box-shadow: 0 0 16px green;
+}
+
+.gotovoBrojanje {
+    color: gold;
+    font-weight: bolder;
+}
+
+.close {
+    color: blueviolet;
+    text-align: center;
+    padding: 0.8rem 0;
+    font-weight: 700;
+
+    a {
+        color: beige;
+        text-decoration: none;
+    }
+}
