@@ -27,10 +27,10 @@ html {
 }
 
 body {
-  background: #2b124c;
+  background: #925cd8;
   line-height: 1.4;
   font-size: 1.2rem;
-  color: #dfb6b2;
+  color: #030a41;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -136,7 +136,7 @@ main .parce_slike_3:hover {
 }
 
 .close {
-  color: blueviolet;
+  color: #030a41;
   text-align: center;
   padding: 0.8rem 0;
   font-weight: 700;
